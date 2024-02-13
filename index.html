@@ -1,0 +1,314 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- logo.jpg taken from https://www.freepik.com/premium-vector/bicycle-logo-doodle-style-classic-forest-theme_52759934.htm -->
+<!-- Erwind.jpb taken from  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 4 - Labo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <div class="row">
+            <div class="col-md-8">
+              <h1>Bike & Breeze</h1>
+              <h3>Bike repair shop</h3>
+              <h5>25 Hawthorne Ave, Ottawa, ON K1S 0A9</h5>
+              <p>Biking Bliss Begins Here!</p>
+            </div>
+            <div class="col-md-4">
+              <img class="img" src="images/logo.jpg" alt="logo" style="max-width: 50%; float: right;">
+            </div>
+          </div>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    <!--<div class="row p-3">-->
+        <!--<div class="col-sm-3 pl-5">Service</div>-->
+        <!--<div class="col-sm-3">Calendar</div>-->
+       <!--<div class="col-sm-3">Payment</div>-->
+        <!--<div class="col-sm-3">Where to find us</div>-->
+    <!-- </div>-->
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div class="container-md p-3 my-3 border bg-light text-success">
+        <h3>About us</h3>
+        <p>We are a family of cyclists who decided to turn their passion into a lifestyle. When we first opened our little bike shop we had no idea how many people were in need of bike services. Now our team of bike experts have grown and we want to help our community be more active and healthy. We offer a range of bikes, accessories, and repair services. This is a place where fellow cyclists could gather, share stories, and embark on new adventures.
+        </p>
+    </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container">
+        <h2>Service description</h2>
+        <p>Here is a list of services offered</p>            
+        <table class="table table-info table-image">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody> 
+            <tr>
+                <td>Tune-Ups</td>
+                <td>Maintain your bike to make sure it stays in good working condition.</td>
+                <td>$60</td>
+                <td><img class="img-fluid" src="images/tune up.webp" alt="Card image"></td>
+            </tr>
+            <tr>
+                <td>Flat Tire Repair</td>
+                <td>Fixing or replacing your tires</td>
+                <td>$40</td>
+                <td><img class="img-fluid" src="images/flat tire.jpg" alt="Card image"></td>
+            </tr>
+            <tr>
+                <td>Chain Maintenance</td>
+                <td>Cleaning or replacing chains</td>
+                <td>$40</td>
+                <td class="w-25"><img class="img-fluid" src="images/chain.avif" alt="Card image"></td>
+            </tr>
+            <tr>
+                <td>Brake Adjustments and Repairs</td>
+                <td>Adjusting brake pads and replacing brake cables</td>
+                <td>$40</td>
+                <td><img class="img-fluid" src="images/brakes.jpg" alt="Card image"></td>
+            </tr>
+            <tr>
+                <td>Custom Builds</td>
+                <td>Let our experts customize your bike to your vision</td>
+                <td>$100 - $5,000</td>
+                <td><img class="img-fluid" src="images/custom.jpg" alt="Card image"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Please note: </strong> We will be closed February 14th for Valentine's day.
+        </div>
+    </div>
+
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap -->
+    <!-- <div class="container">
+        <h2>Button States</h2>
+        <button type="button" class="btn btn-warning">Primary Button</button>
+        <button type="button" class="btn btn-warning active">Active Primary</button>
+        <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
+    </div> -->
+
+
+ 
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h3>Meet our mechanics!</h3>
+        <div class="card-columns">
+            <div class="card card-emp1" style="width:200px">
+                <img class="card-img-top" src="images/Jules.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jules</h4>
+                    <p class="card-text">Specialty: tune-ups and customizations</p>
+                    <a href="#profile-jules" class="btn btn-info" data-toggle="collapse">See Profile</a>
+                    <div id="profile-jules" class="collapse p-3">
+                        <p>Jules has raced competitively for 10 years. She's an expert with road bikes and has a reputation for customization.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-emp2" style="width:200px">
+                <img class="card-img-top" src="images/Mike.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Mike</h4>
+                    <p class="card-text">Specialty: Tire, chain and brake repairs.</p>
+                    <a href="#profile-mike" class="btn btn-info" data-toggle="collapse">See Profile</a>
+                    <div id="profile-mike" class="collapse p-3">
+                        <p>Mike knows anything about dirt bikes. He has raced for years and has worked in bike repairs for even longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+    <!--<div class="container">
+        <h2>More information</h2>
+        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
+        <div id="mechanics" class="collapse">
+            <div class="card bg-warning" style="width:200px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Erwind</h4>
+                    <p class="card-text">Erwind knows all about bikes.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div class="container">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services:</p>
+                        <!-- Taken from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp -->
+                        <label class="service">Tune-Ups
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="service">Flat Tire Repair
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="service">Chain Maintenance
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="service">Brake Adjustments
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="service">Custom Builds
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date works for you?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <!-- https://www.w3schools.com/html/html_forms.asp -->                        
+                        <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <button type="submit" class="btn btn-info">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+    <div class="container">
+        <h4>We want your feedback!</h4>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>How did you hear about us?</h2>
+                        <p>Tell us:</p>
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Friends or Family</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Advertisements</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Other</label>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info " data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+</body>
+</html>
