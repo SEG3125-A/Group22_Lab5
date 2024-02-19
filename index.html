@@ -29,11 +29,15 @@
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css">
+
+
 </head>
 
 
 <body>
-
     <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
     <!-- Should show the name of your company with an image or logo -->
     <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
@@ -207,7 +211,8 @@
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseService" title="Please select a service described above">Choose a service</a>
+                    <img src="images/service.png" alt="Service icon" style="width:40px;height:40px;"> 
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
@@ -237,7 +242,8 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseMechanic">Choose a mechanic</a>
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseMechanic" title="Please select one of our mechanics">Choose a mechanic</a>
+                        <img src="images/mechanic.png" alt="Mechanic icon" style="width:40px;height:40px;"> 
                     </div>
                     <div id="collapseMechanic" class="collapse" data-parent="#accordion">
                         <div class="card-body">
@@ -250,7 +256,8 @@
                     </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate" title="Select the date for your appointment">Choose a date</a>
+                    <img src="images/date.png" alt="Date icon" style="width:40px;height:40px;"> 
                 </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
@@ -268,7 +275,8 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo" title="Please enter your personal information">Your info</a>
+                    <img src="images/info.png" alt="Info icon" style="width:40px;height:40px;"> 
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
@@ -295,7 +303,8 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsePayInfo">Pay here</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsePayInfo" title="Please enter your payment info">Pay here</a>
+                    <img src="images/pay.png" alt="Payment icon" style="width:40px;height:40px;"> 
                 </div>
                 <div id="collapsePayInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
